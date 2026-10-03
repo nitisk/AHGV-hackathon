@@ -1,0 +1,21 @@
+- Checklist
+	- static page ✅️
+		- designing and layout ✅️
+	- video player ✅️
+		- get active timestamp
+		- problem in complete rendering of video on landing the html page
+		- uploading system 
+			- later, first a hardcoded video only
+			- videos
+			- pdfs or ppts(notes)
+	- basic aware LLM
+		- how to get ai on my static page?
+			- ai that has acess to the video and the notes 
+	- timestamp system 
+	- extract transcript from lecture/video
+	- transcript into timestamp based chunks
+		- json files to create citations
+	- eed transcript and notes data to LLM
+		- RAG?
+	- chatbot system
+		- LLM? API?
