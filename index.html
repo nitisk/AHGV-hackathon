@@ -6,12 +6,75 @@
     <link rel="stylesheet" href="style.css">
     <title>AI Learning Assistant</title></head>
 <body>
+    <script src="script.js"></script>
+    
     <h1>AHGV Hackathon</h1>
     <h1>AI Learning Assistant</h1>
-    
-    <video controls>
-        <source src="Files/AI Lecture 1.mp4" type="video/mp4">
-    </video>
-    <iframe src="Files/AI Notes 1.pdf" width="800px" height="800px"></iframe>
+
+    <main class="container">
+
+        <section class="lecture-section">
+
+            <h2>Lecture</h2>
+
+                <video id="lectureVideo" controls>
+                    <source src="Files/AI Lecture 1.mp4" type="video/mp4">
+                </video>    
+
+                <p class="timestamp">
+                    Current position:
+                    <span id="timestamp">00:00</span>
+                </p>
+
+        </section>
+
+        <aside class="side-panel">
+            
+            <section class="notes">                
+                <h2>Lecture Notes</h2>
+
+                <iframe
+                    src="Files/AI Notes 1.pdf"
+                    title="Lecture Notes">
+                </iframe>
+
+            </section>
+
+            <section class="chat">
+
+                <h2>AI Assistant</h2>
+
+                <div id="chatMessages" class="chat-messages">
+
+                    <div class="message ai-message">
+                        <strong>AI Assistant</strong>
+                        <p>
+                            Hi! I'm your learning assistant.
+                            Ask me something about the lecture.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="chat-input">
+
+                    <input
+                        type="text"
+                        id="userInput"
+                        placeholder="Ask about the lecture..."
+                    >
+
+                    <button id="sendButton">
+                        Send
+                    </button>
+
+                </div>
+
+            </section>
+
+        </aside>
+        
+    </main>
 </body>
 </html>
