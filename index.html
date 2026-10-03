@@ -6,15 +6,16 @@
     <link rel="stylesheet" href="style.css">
     <title>AI Learning Assistant</title></head>
 <body>
-    <script src="script.js"></script>
     
-    <h1>AHGV Hackathon</h1>
-    <h1>AI Learning Assistant</h1>
-
+    
     <main class="container">
-
+        <!-- heading of the website  -->
+        <h1>AI Learning Assistant</h1>       
+        <h2>AHGV Hackathon</h2>
+        
+        <!-- lecture section -->
         <section class="lecture-section">
-
+            
             <h2>Lecture</h2>
 
                 <video id="lectureVideo" controls>
@@ -28,24 +29,15 @@
 
         </section>
 
-        <aside class="side-panel">
+        <aside class="side-panel"> <!--aside is used to differentiate items in the two columns-->>
             
-            <section class="notes">                
-                <h2>Lecture Notes</h2>
-
-                <iframe
-                    src="Files/AI Notes 1.pdf"
-                    title="Lecture Notes">
-                </iframe>
-
-            </section>
-
             <section class="chat">
-
+    
+            
                 <h2>AI Assistant</h2>
-
+    
                 <div id="chatMessages" class="chat-messages">
-
+                    
                     <div class="message ai-message">
                         <strong>AI Assistant</strong>
                         <p>
@@ -53,28 +45,40 @@
                             Ask me something about the lecture.
                         </p>
                     </div>
-
+    
                 </div>
-
-
+    
+    
                 <div class="chat-input">
-
+    
                     <input
-                        type="text"
+                    type="text"
                         id="userInput"
                         placeholder="Ask about the lecture..."
                     >
-
+    
                     <button id="sendButton">
                         Send
                     </button>
-
+                    
                 </div>
-
+                
             </section>
-
+            
         </aside>
         
+        <section class="notes">                
+            <h2>Lecture Notes</h2>
+            
+            <iframe
+            src="Files/AI Notes 1.pdf"
+            title="Lecture Notes"
+            width="900"
+            height="900">
+        </iframe>
+
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

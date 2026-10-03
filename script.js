@@ -126,7 +126,6 @@ function formatTime(seconds) {
 
 sendButton.addEventListener("click", sendMessage);
 
-
 // -------------------------
 // ENTER KEY
 // -------------------------
